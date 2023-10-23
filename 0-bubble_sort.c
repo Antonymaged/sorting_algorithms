@@ -26,8 +26,6 @@ size_t len = size;
 while (bubbly)
 {
 bubbly = false;
-ini
-Copy
 for (size_t i = 0; i < len - 1; i++)
 {
 if (array[i] > array[i + 1])
