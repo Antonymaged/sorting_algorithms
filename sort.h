@@ -35,4 +35,6 @@ void print_arr(const int *array, size_t size);
 void print_lis(const listint_t *list);
 void swap_ints(int *a, int *b);
 void bubble_sort(int *array, size_t size);
+void selection_sort(int *array, size_t size);
+
 #endif
