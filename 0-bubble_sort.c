@@ -33,7 +33,7 @@ for (i = 0; i < len - 1; i++)
 if (array[i] > array[i + 1])
 {
 swap_ints(array + i, array + i + 1);
-print_array(array, size);
+print_arr(array, size);
 bubbly = false;
 }
 }
