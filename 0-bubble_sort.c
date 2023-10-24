@@ -19,20 +19,22 @@ Description: Prints the array after each swap.
 */
 void bubble_sort(int *array, size_t size)
 {
+size_t i, len;
+bool bubbl;
 if (array == NULL || size < 2)
 return;
-bool bubbly = true;
-size_t len = size;
-while (bubbly)
+bubbl = true;
+len = size;
+while (bubbl)
 {
-bubbly = false;
-for (size_t i = 0; i < len - 1; i++)
+bubbl = false;
+for (i = 0; i < len - 1; i++)
 {
 if (array[i] > array[i + 1])
 {
 swap_ints(&array[i], &array[i + 1]);
 print_arr(array, size);
-bubbly = true;
+bubbl = true;
 }
 }
 len--;

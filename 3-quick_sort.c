@@ -27,9 +27,10 @@ Return: The final partition index.
 */
 int lomuto_partition(int *array, size_t size, int left, int right)
 {
+int j;
 int pivot = array[right];
 int i = left - 1;
-for (int j = left; j <= right - 1; j++)
+for (j = left; j <= right - 1; j++)
 {
 if (array[j] < pivot)
 {
