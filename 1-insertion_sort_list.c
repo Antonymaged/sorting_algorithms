@@ -38,7 +38,7 @@ insert = iter->prev;
 while (insert != NULL && iter->n < insert->n)
 {
 swap_nodes(list, insert, iter);
-print_lis((const listint_t *)*list);
+print_list((const listint_t *)*list);
 insert = iter->prev;
 }
 }
